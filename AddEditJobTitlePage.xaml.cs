@@ -21,9 +21,13 @@ namespace Accounting
     public partial class AddEditJobTitlePage : Page
     {
         private JobTitle _currentJobTitle = new JobTitle();
-        public AddEditJobTitlePage()
+        public AddEditJobTitlePage(JobTitle selectedJobTitle)
         {
             InitializeComponent();
+
+            if (selectedJobTitle != null)
+                _currentJobTitle = selectedJobTitle;
+
             DataContext = _currentJobTitle;
         }
 
@@ -53,6 +57,8 @@ namespace Accounting
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+
+            NavigationService.GoBack();
         }
 
         

@@ -32,7 +32,7 @@ namespace Accounting
 
         private void Employee_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new EmployeePage());
         }
 
         private void Equipment_Btn_Click(object sender, RoutedEventArgs e)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,17 +29,34 @@ namespace Accounting
 
         private void Btn_Edit_Job_Title_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new AddEditJobTitlePage((sender as Button).DataContext as JobTitle));
         }
 
         private void Add_Job_Title_Btn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AddEditJobTitlePage());
+            NavigationService.Navigate(new AddEditJobTitlePage(null));
         }
 
         private void Delete_Job_Title_Btn_Click(object sender, RoutedEventArgs e)
         {
+            var JobTitleForRemoving = DGridJobTitle.SelectedItems.Cast<JobTitle>().ToList();
 
+            if (MessageBox.Show($"Вы хотите удалть следующие {JobTitleForRemoving.Count()} элементов", "Внимание",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    AccountingEntities.GetContext().JobTitles.RemoveRange(JobTitleForRemoving);
+                    AccountingEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Данные удалены!");
+
+                    DGridJobTitle.ItemsSource = AccountingEntities.GetContext().JobTitles.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
         }
 
         private void Page_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
