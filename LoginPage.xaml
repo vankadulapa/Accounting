@@ -13,7 +13,8 @@
             <TextBlock HorizontalAlignment="Left" Margin="221,129,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top"/>
             <TextBox HorizontalAlignment="Left" Margin="221,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="LoginBox"/>
             <TextBlock HorizontalAlignment="Left" Margin="221,191,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.693"/>
-            <PasswordBox Name="PasswordBox" Margin="221,225,459,206" HorizontalContentAlignment="Center" >
+            <!--<PasswordBox Name="PasswordBox" Margin="221,225,459,206" HorizontalContentAlignment="Center"  >-->
+            <PasswordBox HorizontalAlignment="Left" Margin="221,225,0,0" VerticalAlignment="Top" Width="120" Name="PasswordBox">
                 <PasswordBox.Effect >
                     <DropShadowEffect BlurRadius="10" Opacity="0.2"></DropShadowEffect>
                 </PasswordBox.Effect>

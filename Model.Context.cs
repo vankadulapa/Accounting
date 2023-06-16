@@ -17,9 +17,18 @@ namespace Accounting
     
     public partial class AccountingEntities : DbContext
     {
+        private static AccountingEntities _context;
         public AccountingEntities()
             : base("name=AccountingEntities")
         {
+        }
+
+        public static AccountingEntities GetContext()
+        {
+            if (_context == null)
+                _context = new AccountingEntities();
+
+            return _context;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

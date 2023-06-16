@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditJobTitlePage.xaml.cs">
+      <DependentUpon>AddEditJobTitlePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AppData.cs" />
     <Compile Include="ChosePage.xaml.cs">
       <DependentUpon>ChosePage.xaml</DependentUpon>
@@ -79,6 +82,9 @@
     </Compile>
     <Compile Include="JobTitle.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobTitlePage.xaml.cs">
+      <DependentUpon>JobTitlePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -112,7 +118,15 @@
     <Compile Include="Отчет.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Page Include="AddEditJobTitlePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChosePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JobTitlePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -24,5 +24,57 @@ namespace Accounting
         {
             InitializeComponent();
         }
+
+        private void JobTitle_Btn_CLick(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new JobTitlePage());
+        }
+
+        private void Employee_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Equipment_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Department_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Maintenance_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Type_Maintenance_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void User_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Role_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Otchet_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Exit_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }
