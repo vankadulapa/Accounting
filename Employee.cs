@@ -26,5 +26,7 @@ namespace Accounting
         public virtual Department Department { get; set; }
         public virtual Equipment Equipment { get; set; }
         public virtual JobTitle JobTitle { get; set; }
+
+        public string NameJobTitle { get; set; }
     }
 }
