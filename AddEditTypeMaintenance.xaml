@@ -1,0 +1,21 @@
+﻿<Page x:Class="Accounting.AddEditTypeMaintenance"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Accounting"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditTypeMaintenance">
+
+    <Grid>
+        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,321,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,101,0,0" TextWrapping="Wrap" Text="Название типа обслуживания" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,140,0,0" TextWrapping="Wrap" Text="Длительность" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,180,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top"/>
+        <TextBox MaxLength="50" HorizontalAlignment="Left" Margin="322,101,0,0" TextWrapping="Wrap" Text="{Binding NameMaintenance}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="322,139,0,0" TextWrapping="Wrap" Text="{Binding Duration}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="322,180,0,0" TextWrapping="Wrap" Text="{Binding Expenses}" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>

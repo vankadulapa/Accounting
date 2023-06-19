@@ -52,7 +52,7 @@ namespace Accounting
 
         private void Type_Maintenance_Btn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new TypeMaintenance());
+            NavigationService.Navigate(new TypeMaintenancePage());
         }
 
         private void User_Btn_Click(object sender, RoutedEventArgs e)
@@ -72,7 +72,7 @@ namespace Accounting
 
         private void Exit_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
 
 

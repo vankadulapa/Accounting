@@ -79,6 +79,9 @@
     <Compile Include="AddEditMaintenancePage.xaml.cs">
       <DependentUpon>AddEditMaintenancePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddEditTypeMaintenance.xaml.cs">
+      <DependentUpon>AddEditTypeMaintenance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AppData.cs" />
     <Compile Include="ChosePage.xaml.cs">
       <DependentUpon>ChosePage.xaml</DependentUpon>
@@ -130,6 +133,9 @@
     <Compile Include="TypeMaintenance.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="TypeMaintenancePage.xaml.cs">
+      <DependentUpon>TypeMaintenancePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -153,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddEditMaintenancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEditTypeMaintenance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,6 +216,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TypeMaintenancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
