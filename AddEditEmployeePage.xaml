@@ -21,9 +21,9 @@
         <TextBox HorizontalAlignment="Left" Margin="322,80,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="120" MaxLength="50"/>
         <TextBox HorizontalAlignment="Left" Margin="322,118,0,0" TextWrapping="Wrap" Text="{Binding Patronymic}" VerticalAlignment="Top" Width="120" MaxLength="50"/>
         <TextBox HorizontalAlignment="Left" Margin="322,159,0,0" TextWrapping="Wrap" Text="{Binding PhoneNumber}" VerticalAlignment="Top" Width="120" MaxLength="12"/>
-        <ComboBox SelectedItem="{Binding IdJobTitle}" HorizontalAlignment="Left" Margin="322,201,0,0" VerticalAlignment="Top" Width="120" Height="24" x:Name="ComboJobTitle" DisplayMemberPath="IdJobTitle"/>
-        <ComboBox SelectedItem="{Binding IdDepartment}" HorizontalAlignment="Left" Margin="322,241,0,0" VerticalAlignment="Top" Width="120" Height="22" x:Name="ComboDepartment" DisplayMemberPath="IdDepartment"/>
-        <ComboBox SelectedItem="{Binding IdEquipment}" HorizontalAlignment="Left" Margin="322,280,0,0" VerticalAlignment="Top" Width="120" Height="23" x:Name="ComboEquipment" DisplayMemberPath="IdEquipment"/>
+        <ComboBox SelectedItem="{Binding IdJobTitle}" HorizontalAlignment="Left" Margin="322,201,0,0" VerticalAlignment="Top" Width="120" Height="24" x:Name="ComboJobTitle" DisplayMemberPath="NameJobTitle"/>
+        <ComboBox SelectedItem="{Binding IdDepartment}" HorizontalAlignment="Left" Margin="322,241,0,0" VerticalAlignment="Top" Width="120" Height="22" x:Name="ComboDepartment" DisplayMemberPath="NameDepartment"/>
+        <ComboBox SelectedItem="{Binding IdEquipment}" HorizontalAlignment="Left" Margin="322,280,0,0" VerticalAlignment="Top" Width="120" Height="23" x:Name="ComboEquipment" DisplayMemberPath="NameEquipment"/>
         <Button Content="Сохранить" Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,321,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
     </Grid>
 </Page>

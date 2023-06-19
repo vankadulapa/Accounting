@@ -44,7 +44,7 @@ namespace Accounting
             }
             else
             {
-                MessageBox.Show("Password is incorrect");
+                MessageBox.Show("Неправильный пароль");
             }
         }
     }
