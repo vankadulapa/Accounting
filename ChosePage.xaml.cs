@@ -37,22 +37,22 @@ namespace Accounting
 
         private void Equipment_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new EquipmentPage());
         }
 
         private void Department_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new DepartmentPage());
         }
 
         private void Maintenance_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new MaintenancePage());
         }
 
         private void Type_Maintenance_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new TypeMaintenance());
         }
 
         private void User_Btn_Click(object sender, RoutedEventArgs e)

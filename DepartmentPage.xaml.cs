@@ -16,40 +16,40 @@ using System.Windows.Shapes;
 namespace Accounting
 {
     /// <summary>
-    /// Interaction logic for EmployeePage.xaml
+    /// Interaction logic for DepartmentPage.xaml
     /// </summary>
-    public partial class EmployeePage : Page
+    public partial class DepartmentPage : Page
     {
-        public EmployeePage()
+        public DepartmentPage()
         {
             InitializeComponent();
-            DGridEmployee.ItemsSource = AccountingEntities.GetContext().Employees.ToList();
+            DGridDepartment.ItemsSource = AccountingEntities.GetContext().Departments.ToList();
         }
 
-        private void Add_Employee_Btn_Click(object sender, RoutedEventArgs e)
+        private void Btn_Edit_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AddEditEmployeePage(null));
+            NavigationService.Navigate(new AddEditDepartmentPage((sender as Button).DataContext as Department));
         }
 
-        private void Btn_Edit_Employee_Click(object sender, RoutedEventArgs e)
+        private void Add_Department_Btn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AddEditEmployeePage((sender as Button).DataContext as Employee));
+            NavigationService.Navigate(new AddEditDepartmentPage(null));
         }
 
-        private void Delete_Employee_Btn_Click(object sender, RoutedEventArgs e)
+        private void Delete_Department_Btn_Click(object sender, RoutedEventArgs e)
         {
-            var EmployeeForRemoving = DGridEmployee.SelectedItems.Cast<Employee>().ToList();
+            var DepartmentForRemoving = DGridDepartment.SelectedItems.Cast<Department>().ToList();
 
-            if (MessageBox.Show($"Вы хотите удалть следующие {EmployeeForRemoving.Count()} элементов", "Внимание",
+            if (MessageBox.Show($"Вы хотите удалть следующие {DepartmentForRemoving.Count()} элементов", "Внимание",
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try
                 {
-                    AccountingEntities.GetContext().Employees.RemoveRange(EmployeeForRemoving);
+                    AccountingEntities.GetContext().Departments.RemoveRange(DepartmentForRemoving);
                     AccountingEntities.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
 
-                    DGridEmployee.ItemsSource = AccountingEntities.GetContext().Employees.ToList();
+                    DGridDepartment.ItemsSource = AccountingEntities.GetContext().Departments.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -63,9 +63,8 @@ namespace Accounting
             if (Visibility == Visibility.Visible)
             {
                 AccountingEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGridEmployee.ItemsSource = AccountingEntities.GetContext().Employees.ToList();
+                DGridDepartment.ItemsSource = AccountingEntities.GetContext().Departments.ToList();
             }
-        }
+        } 
     }
 }
-

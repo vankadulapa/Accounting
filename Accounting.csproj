@@ -64,11 +64,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddEditDepartmentPage.xaml.cs">
+      <DependentUpon>AddEditDepartmentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddEditEmployeePage.xaml.cs">
       <DependentUpon>AddEditEmployeePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddEditEquipment.xaml.cs">
+      <DependentUpon>AddEditEquipment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddEditJobTitlePage.xaml.cs">
       <DependentUpon>AddEditJobTitlePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditMaintenancePage.xaml.cs">
+      <DependentUpon>AddEditMaintenancePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppData.cs" />
     <Compile Include="ChosePage.xaml.cs">
@@ -76,6 +85,9 @@
     </Compile>
     <Compile Include="Department.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentPage.xaml.cs">
+      <DependentUpon>DepartmentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -85,6 +97,9 @@
     </Compile>
     <Compile Include="Equipment.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentPage.xaml.cs">
+      <DependentUpon>EquipmentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="JobTitle.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -97,6 +112,9 @@
     </Compile>
     <Compile Include="Maintenance.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MaintenancePage.xaml.cs">
+      <DependentUpon>MaintenancePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
@@ -118,7 +136,15 @@
     <Compile Include="Отчет.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Page Include="AddEditDepartmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddEditEmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEditEquipment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,11 +152,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AddEditMaintenancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ChosePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DepartmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EmployeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EquipmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MaintenancePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

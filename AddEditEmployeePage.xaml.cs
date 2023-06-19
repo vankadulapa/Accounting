@@ -21,9 +21,12 @@ namespace Accounting
     public partial class AddEditEmployeePage : Page
     {
         private Employee _currentEmployee = new Employee();
-        public AddEditEmployeePage()
+        public AddEditEmployeePage(Employee selectedEmployee)
         {
             InitializeComponent();
+
+            if (selectedEmployee != null)
+                _currentEmployee = selectedEmployee;
 
             DataContext = _currentEmployee;
 
