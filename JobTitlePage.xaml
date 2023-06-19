@@ -17,18 +17,23 @@
         <Frame Name="JobTitlePageFrame" Grid.RowSpan="3"></Frame>
         <DataGrid x:Name="DGridJobTitle" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название проффесии" Binding="{Binding NameJobTitle}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название професии" Binding="{Binding NameJobTitle}" Width="*"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="Редактировать" Name="BtnEditJobTitle" Click="Btn_Edit_Job_Title_Click"></Button>
                         </DataTemplate>
+
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Добавить" Name="AddJobTitleBtn" Click="Add_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
-        <Button Content="Удалить" Name="DeleteJobTitleBtn" Click="Delete_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
-
+        <Image Panel.ZIndex="1" HorizontalAlignment="Left" Height="47" VerticalAlignment="Center" Width="125" Source="/Resources/61db623739911108f8a3a17e843699be.jpg"/>
+        <Button Panel.ZIndex="1" Content="Добавить" Name="AddJobTitleBtn" Click="Add_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Button Panel.ZIndex="1" Content="Удалить" Name="DeleteJobTitleBtn" Click="Delete_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Grid Background="LightGray" >
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Профессии" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" Background="DarkGreen" Margin="0,356,0,0" Grid.RowSpan="2"></Grid>
     </Grid>
 </Page>

@@ -18,14 +18,19 @@
         <Frame Name="ChosePageFrame" Grid.RowSpan="3"></Frame>
         <Button Name="JobTitleBtn" Click="JobTitle_Btn_CLick" Content="Название должности" HorizontalAlignment="Left" Margin="26,52,0,0" VerticalAlignment="Top" Height="30" Width="134" Grid.Row="1"/>
         <Button Name="EmployeeBtn" Click="Employee_Btn_Click" Content="Сотрудники" HorizontalAlignment="Left" Margin="198,52,0,0" VerticalAlignment="Top" Height="30" Width="121" Grid.Row="1"/>
-        <Button Name="EquipmentBtn" Click="Equipment_Btn_Click" Content="Оборудование" HorizontalAlignment="Left" Margin="400,52,0,0" VerticalAlignment="Top" Height="30" Width="114" Grid.Row="1"/>
-        <Button Name="DepartmentBtn" Click="Department_Btn_Click" Content="Отделы" HorizontalAlignment="Left" Margin="560,52,0,0" VerticalAlignment="Top" Height="30" Width="111" Grid.Row="1"/>
+        <Button Name="EquipmentBtn" Click="Equipment_Btn_Click" Content="Оборудование" HorizontalAlignment="Left" Margin="481,52,0,0" VerticalAlignment="Top" Height="30" Width="114" Grid.Row="1"/>
+        <Button Name="DepartmentBtn" Click="Department_Btn_Click" Content="Отделы" HorizontalAlignment="Left" Margin="657,52,0,0" VerticalAlignment="Top" Height="30" Width="110" Grid.Row="1"/>
         <Button Name="MaintenanceBtn" Click="Maintenance_Btn_Click" Content="Тех.обслуживание" HorizontalAlignment="Left" Margin="26,121,0,0" VerticalAlignment="Top" Height="30" Width="134" Grid.Row="1"/>
         <Button Name="TypeMaintenanceBtn" Click="Type_Maintenance_Btn_Click" Content="Тип обслуживания" HorizontalAlignment="Left" Margin="198,121,0,0" VerticalAlignment="Top" Height="30" Width="121" Grid.Row="1"/>
-        <Button Name="UserBtn" Click="User_Btn_Click" Content="Пользователи" HorizontalAlignment="Left" Margin="400,121,0,0" VerticalAlignment="Top" Height="30" Width="114" Grid.Row="1"/>
-        <Button Name="RoleBtn" Click="Role_Btn_Click"  Content="Роли" HorizontalAlignment="Left" Margin="560,121,0,0" VerticalAlignment="Top" Height="30" Width="111" Grid.Row="1"/>
-        <Button Name="ExitBtn" Click="Exit_Btn_Click" Content="Выход" HorizontalAlignment="Left" Margin="688,293,0,0" VerticalAlignment="Top" Height="30" Width="79" Grid.Row="1"/>
+        <Button Name="UserBtn" Click="User_Btn_Click" Content="Пользователи" HorizontalAlignment="Left" Margin="481,121,0,0" VerticalAlignment="Top" Height="30" Width="114" Grid.Row="1"/>
+        <Button Name="RoleBtn" Click="Role_Btn_Click"  Content="Роли" HorizontalAlignment="Left" Margin="657,121,0,0" VerticalAlignment="Top" Height="30" Width="111" Grid.Row="1"/>
+        <Button Panel.ZIndex="1" Name="ExitBtn" Click="Exit_Btn_Click" Content="Выход" HorizontalAlignment="Left" Margin="688,366,0,0" VerticalAlignment="Top" Height="30" Width="79" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="319,0,0,0" TextWrapping="Wrap" Text="Страница выбора" VerticalAlignment="Center" Height="16" Width="117"/>
-        <Button Content="Создать отчет" Name="Otchet" Click="Otchet_Btn_Click" HorizontalAlignment="Left" Margin="319,181,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.06,-0.417" Width="81" Height="31"/>
+        <Button Content="Создать отчет" Name="Otchet" Click="Otchet_Btn_Click" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" RenderTransformOrigin="-0.06,-0.417" Width="80" Height="32"/>
+        <Grid Background="LightGray" >
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Страница выбора" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" Background="DarkGreen" Margin="0,356,0,0" Grid.RowSpan="2"></Grid>
+        <Image HorizontalAlignment="Left" Height="47" VerticalAlignment="Center" Width="125" Source="/Resources/61db623739911108f8a3a17e843699be.jpg"/>
     </Grid>
 </Page>

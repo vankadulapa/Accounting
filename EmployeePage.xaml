@@ -33,8 +33,12 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Добавить" Name="AddEmployeeBtn" Click="Add_Employee_Btn_Click" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
-        <Button Content="Удалить" Name="DeleteEmployeeBtn" Click="Delete_Employee_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
-
+        <Button Panel.ZIndex="1" Content="Добавить" Name="AddEmployeeBtn" Click="Add_Employee_Btn_Click" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Button Panel.ZIndex="1" Content="Удалить" Name="DeleteEmployeeBtn" Click="Delete_Employee_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Grid Background="LightGray" >
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Сотрудники" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="1" Background="DarkGreen" Margin="0,356,0,0" Grid.RowSpan="2"></Grid>
+        <Image HorizontalAlignment="Left" Height="47" VerticalAlignment="Center" Width="125" Source="/Resources/61db623739911108f8a3a17e843699be.jpg"/>
     </Grid>
 </Page>

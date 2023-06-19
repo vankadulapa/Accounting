@@ -13,6 +13,7 @@
             <RowDefinition Height="31*"/>
         </Grid.RowDefinitions>
         <Frame Name="MainFrame" Grid.RowSpan="3"></Frame>
-
+        <!--<Grid Background="YellowGreen" ></Grid>
+        <Grid Grid.Row="1" Background="DarkGreen" Margin="0,356,0,0" Grid.RowSpan="2"></Grid>-->
     </Grid>
 </Window>

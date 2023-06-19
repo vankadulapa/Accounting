@@ -23,6 +23,10 @@ namespace Accounting
         public ChosePage()
         {
             InitializeComponent();
+            if (Models.AppData.CurrentAccessLevel > 1)
+            {   // Админ = 1
+                this.UserBtn.Visibility = this.RoleBtn.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void JobTitle_Btn_CLick(object sender, RoutedEventArgs e)

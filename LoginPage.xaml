@@ -10,16 +10,18 @@
 
     <Grid>
         <Grid Background="White">
-            <TextBlock HorizontalAlignment="Left" Margin="221,129,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Margin="221,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="LoginBox"/>
-            <TextBlock HorizontalAlignment="Left" Margin="221,191,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.693"/>
+            <TextBlock HorizontalAlignment="Left" Margin="340,130,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top" RenderTransformOrigin="0.509,0.614"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="LoginBox"/>
+            <TextBlock HorizontalAlignment="Left" Margin="340,204,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.693"/>
             <!--<PasswordBox Name="PasswordBox" Margin="221,225,459,206" HorizontalContentAlignment="Center"  >-->
-            <PasswordBox HorizontalAlignment="Left" Margin="221,225,0,0" VerticalAlignment="Top" Width="120" Name="PasswordBox">
+            <Image HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="125" Source="/Resources/61db623739911108f8a3a17e843699be.jpg" Margin="0,-1,0,0"/>
+            <PasswordBox HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Width="120" Name="PasswordBox">
                 <PasswordBox.Effect >
                     <DropShadowEffect BlurRadius="10" Opacity="0.2"></DropShadowEffect>
                 </PasswordBox.Effect>
             </PasswordBox>
-            <Button Content="Войти" Click="Login_Button_Click" HorizontalAlignment="Left" Margin="234,274,0,0" VerticalAlignment="Top" Height="21" Width="74"/>
+            <Button Content="Войти" Click="Login_Button_Click" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Height="21" Width="74"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,32,0,0" TextWrapping="Wrap" Text="Учёт оборудования на предприятии АО ЕПЗ" VerticalAlignment="Top"/>
 
 
 
