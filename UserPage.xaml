@@ -1,0 +1,39 @@
+﻿<Page x:Class="Accounting.UserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Accounting"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserPage" IsVisibleChanged="Page_IsVisibleChange">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="361*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <Image Panel.ZIndex="1" HorizontalAlignment="Left" Height="47" VerticalAlignment="Center" Width="125" Source="/Resources/61db623739911108f8a3a17e843699be.jpg"/>
+        <Button Panel.ZIndex="1" Content="Добавить" Name="AddJobTitleBtn" Click="Add_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Button Panel.ZIndex="1" Content="Удалить" Name="DeleteJobTitleBtn" Click="Delete_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
+        <Grid Background="LightGray" >
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Пользователи" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" Background="DarkGreen" Margin="0,356,0,0" Grid.RowSpan="2"></Grid>
+        <DataGrid Grid.Row="1" x:Name="DGridUser" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Роль" Binding="{Binding UserRoleId}" Width="*"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit" Click="Btn_Edit_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

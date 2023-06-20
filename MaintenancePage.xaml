@@ -14,9 +14,9 @@
         <Button Panel.ZIndex="1" Content="Удалить" x:Name="DeleteDepartmentBtn" Click="Delete_Department_Btn_Click" HorizontalAlignment="Left" Margin="640,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="134"/>
         <DataGrid x:Name="DGridMaintance" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Оборудование" Binding="{Binding IdEquipment}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Тип Обслуживания" Binding="{Binding NameMaintenance}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Дата обслуживания" Binding="{Binding DateMaintnance}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Оборудование" Binding="{Binding Equipment.NameEquipment}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тип Обслуживания" Binding="{Binding TypeMaintenance}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата обслуживания" Binding="{Binding DateMaintenance}" Width="*"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

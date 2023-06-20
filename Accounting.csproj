@@ -80,8 +80,14 @@
     <Compile Include="AddEditMaintenancePage.xaml.cs">
       <DependentUpon>AddEditMaintenancePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddEditRolePage.xaml.cs">
+      <DependentUpon>AddEditRolePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddEditTypeMaintenance.xaml.cs">
       <DependentUpon>AddEditTypeMaintenance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditUserPage.xaml.cs">
+      <DependentUpon>AddEditUserPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppData.cs" />
     <Compile Include="ChosePage.xaml.cs">
@@ -128,6 +134,9 @@
     <Compile Include="Role.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="RolePage.xaml.cs">
+      <DependentUpon>RolePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -139,6 +148,9 @@
     </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Отчет.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -163,7 +175,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AddEditRolePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddEditTypeMaintenance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEditUserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,7 +237,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RolePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TypeMaintenancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -271,7 +299,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\61db623739911108f8a3a17e843699be.jpg" />
+    <Resource Include="Resources\61db623739911108f8a3a17e843699be.jpg" />
     <None Include="Resources\Image1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

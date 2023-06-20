@@ -25,5 +25,10 @@ namespace Accounting
             InitializeComponent();
             MainFrame.Navigate(new LoginPage());
         }
+
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

@@ -61,12 +61,12 @@ namespace Accounting
 
         private void User_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new UserPage());
         }
 
         private void Role_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new RolePage());
         }
 
         private void Otchet_Btn_Click(object sender, RoutedEventArgs e)

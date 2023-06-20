@@ -19,8 +19,8 @@ namespace Accounting
         {
             this.Maintenances = new HashSet<Maintenance>();
         }
-    
-        public int IdTypeMaintenance { get; set; }
+
+        public Nullable<int> IdTypeMaintenance { get; set; }
         public string NameMaintenance { get; set; }
         public Nullable<System.TimeSpan> Duration { get; set; }
         public Nullable<decimal> Expenses { get; set; }

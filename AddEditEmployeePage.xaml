@@ -14,7 +14,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="81,82,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,120,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,160,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="81,201,0,0" TextWrapping="Wrap" Text="Проффесия" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,201,0,0" TextWrapping="Wrap" Text="Профессия" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,241,0,0" TextWrapping="Wrap" Text="Отдел" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,280,0,0" TextWrapping="Wrap" Text="Оборудование" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="322,39,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="120" MaxLength="50"/>
@@ -24,6 +24,6 @@
         <ComboBox ItemsSource="{Binding JobTitles}" SelectedValue="{Binding IdJobTitle, Mode=TwoWay}" SelectedValuePath="IdJobTitle" DisplayMemberPath="NameJobTitle"     HorizontalAlignment="Left" Margin="322,201,0,0" VerticalAlignment="Top" Width="120" Height="24" x:Name="ComboJobTitle"/>
         <ComboBox ItemsSource="{Binding Departments}" SelectedValue="{Binding IdDepartment, Mode=TwoWay}" SelectedValuePath="IdDepartment" DisplayMemberPath="NameDepartment" HorizontalAlignment="Left" Margin="322,241,0,0" VerticalAlignment="Top" Width="120" Height="22" x:Name="ComboDepartment"/>
         <ComboBox ItemsSource="{Binding Equipments}" SelectedValue="{Binding IdEquipment, Mode=TwoWay}" SelectedValuePath="IdEquipment" DisplayMemberPath="NameEquipment"      HorizontalAlignment="Left" Margin="322,280,0,0" VerticalAlignment="Top" Width="120" Height="23" x:Name="ComboEquipment"/>
-        <Button Content="Сохранить" Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,321,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <Button Content="Сохранить" Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,317,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
     </Grid>
 </Page>

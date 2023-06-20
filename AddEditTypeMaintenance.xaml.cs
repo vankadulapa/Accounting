@@ -36,10 +36,10 @@ namespace Accounting
 
             if (string.IsNullOrWhiteSpace(_curentTypeMaintenance.NameMaintenance))
                 errors.AppendLine("Введите название тех.обсл.");
-            //if (TimeSpan(_curentTypeMaintenance.Duration))
-            //    errors.AppendLine("Введите название тех.обсл.");
-            //if (decimal.(_curentTypeMaintenance.Expenses))
-            //    errors.AppendLine("Введите название тех.обсл.");
+            if ((_curentTypeMaintenance.Duration) == null)
+                errors.AppendLine("Введите длительность");
+            if ((_curentTypeMaintenance.Expenses) == null)
+                errors.AppendLine("Введите стоимость");
 
             if (errors.Length > 0)
             {

@@ -10,13 +10,13 @@
 
     <Grid>
         <Frame Name="AddEditMaintenancePageFrame"></Frame>
-        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,321,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,81,0,0" TextWrapping="Wrap" Text="Оборудование" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,121,0,0" TextWrapping="Wrap" Text="Тип обслуживания" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,161,0,0" TextWrapping="Wrap" Text="Дата обслуживания" VerticalAlignment="Top"/>
-        <ComboBox Text="{Binding TypeMaintence}" x:Name="ComboEquipment" DisplayMemberPath="Equipment" HorizontalAlignment="Left" Margin="322,115,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox Text="{Binding Equipment}" x:Name="ComboTypeOfMeintenance" HorizontalAlignment="Left" Margin="322,78,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="322,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding NameMaintenance}" SelectedValue="{Binding TypeMaintenance, Mode=TwoWay}" SelectedValuePath="TypeMaintenance" x:Name="ComboEquipment" DisplayMemberPath="Equipment" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding IdEquipment}" SelectedValue="{Binding IdEquipment, Mode=TwoWay}" SelectedValuePath="IdEquipment" DisplayMemberPath="NameEquipment"  x:Name="ComboTypeOfMeintenance" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

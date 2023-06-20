@@ -9,13 +9,13 @@
       Title="AddEditTypeMaintenance">
 
     <Grid>
-        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,321,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
+        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Center" Margin="0,309,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,101,0,0" TextWrapping="Wrap" Text="Название типа обслуживания" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,140,0,0" TextWrapping="Wrap" Text="Длительность" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,180,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top"/>
-        <TextBox MaxLength="50" HorizontalAlignment="Left" Margin="322,101,0,0" TextWrapping="Wrap" Text="{Binding NameMaintenance}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="322,139,0,0" TextWrapping="Wrap" Text="{Binding Duration}" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="322,180,0,0" TextWrapping="Wrap" Text="{Binding Expenses}" VerticalAlignment="Top" Width="120"/>
+        <TextBox MaxLength="50" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="{Binding NameMaintenance}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,138,0,0" TextWrapping="Wrap" Text="{Binding Duration}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,180,0,0" TextWrapping="Wrap" Text="{Binding Expenses}" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

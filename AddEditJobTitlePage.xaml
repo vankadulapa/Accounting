@@ -10,9 +10,9 @@
 
     <Grid>
         <Frame Name="AddEditJobTitlePageFrame"></Frame>
-        <TextBlock HorizontalAlignment="Left" Margin="90,186,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="268,185,0,0" TextWrapping="Wrap" Text="{Binding NameJobTitle}" VerticalAlignment="Top" Width="120" MaxLength="50"/>
-        <Button Content="Сохранить" Name="Save_JobTitleBtn" Click="Save_Job_Title_Btn_Click" HorizontalAlignment="Left" Margin="318,341,0,0" VerticalAlignment="Top" Width="82"/>
+        <TextBlock HorizontalAlignment="Left" Margin="136,184,0,0" TextWrapping="Wrap" Text="Название" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,184,0,0" TextWrapping="Wrap" Text="{Binding NameJobTitle}" VerticalAlignment="Top" Width="120" MaxLength="50"/>
+        <Button Content="Сохранить" Name="Save_JobTitleBtn" Click="Save_Job_Title_Btn_Click" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top" Width="82"/>
 
     </Grid>
 </Page>

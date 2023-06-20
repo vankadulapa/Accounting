@@ -10,11 +10,11 @@
 
     <Grid>
         <Frame Name="AddEditEquipmentFrame"></Frame>
-        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,283,0,0" VerticalAlignment="Top" Width="120" Height="24" Grid.Row="1"/>
+        <Button Content="Сохранить" x:Name="BtnSave" Click="Btn_Save_Click" HorizontalAlignment="Left" Margin="322,271,0,0" VerticalAlignment="Top" Width="120" Height="24" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="83,62,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Оборудование" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="83,108,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Отдел" VerticalAlignment="Top"/>
         <TextBox MaxLength="50" Text="{Binding NameEquipment}" HorizontalAlignment="Left" Margin="322,62,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox SelectedItem="{Binding IdDepartment}" HorizontalAlignment="Left" Margin="322,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" x:Name="ComboDepartment" DisplayMemberPath="NameDepartment"/>
+        <ComboBox ItemsSource="{Binding IdDepartment}" SelectedValue="{Binding IdDepartment, Mode=TwoWay}" SelectedValuePath="IdDepartment"   HorizontalAlignment="Left" Margin="322,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" x:Name="ComboDepartment" DisplayMemberPath="NameDepartment"/>
 
 
         <Grid.RowDefinitions>

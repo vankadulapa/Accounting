@@ -21,9 +21,9 @@
                 <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Номер телефона" Binding="{Binding PhoneNumber}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Профессия" Binding="{Binding IdJobTitle}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Отдел" Binding="{Binding IdDepartment}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Оборудование" Binding="{Binding IdEquipment}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Профессия"    Binding="{Binding JobTitle.NameJobTitle}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отдел"        Binding="{Binding Department.NameDepartment}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Оборудование" Binding="{Binding Equipment.NameEquipment}" Width="*"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
