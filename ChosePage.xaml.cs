@@ -76,7 +76,10 @@ namespace Accounting
 
         private void Exit_Btn_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            if (MessageBox.Show($"Вы хотите выйти?", "Внимание!",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+
+                Application.Current.Shutdown();
         }
 
 

@@ -24,7 +24,7 @@
         <Button Name="TypeMaintenanceBtn" Click="Type_Maintenance_Btn_Click" Content="Тип обслуживания" HorizontalAlignment="Left" Margin="198,121,0,0" VerticalAlignment="Top" Height="30" Width="121" Grid.Row="1"/>
         <Button Name="UserBtn" Click="User_Btn_Click" Content="Пользователи" HorizontalAlignment="Left" Margin="481,121,0,0" VerticalAlignment="Top" Height="30" Width="114" Grid.Row="1"/>
         <Button Name="RoleBtn" Click="Role_Btn_Click"  Content="Роли" HorizontalAlignment="Left" Margin="657,121,0,0" VerticalAlignment="Top" Height="30" Width="111" Grid.Row="1"/>
-        <Button Panel.ZIndex="1" Name="ExitBtn" Click="Exit_Btn_Click" Content="Выход" HorizontalAlignment="Left" Margin="688,366,0,0" VerticalAlignment="Top" Height="30" Width="79" Grid.Row="1"/>
+        <Button Panel.ZIndex="1" Name="ExitBtn" Click="Exit_Btn_Click" Content="Выход" HorizontalAlignment="Left" Margin="688,301,0,0" VerticalAlignment="Top" Height="30" Width="79" Grid.Row="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="319,0,0,0" TextWrapping="Wrap" Text="Страница выбора" VerticalAlignment="Center" Height="16" Width="117"/>
         <!--<Button Content="Создать отчет" Name="Otchet" Click="Otchet_Btn_Click" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" RenderTransformOrigin="-0.06,-0.417" Width="80" Height="32"/>-->
         <Grid Background="LightGray" >

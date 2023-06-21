@@ -55,6 +55,8 @@ namespace Accounting
             {
                 MessageBox.Show(ex.ToString());
             }
+
+            NavigationService.GoBack();
         }
     }
 }
