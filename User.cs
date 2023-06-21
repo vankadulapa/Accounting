@@ -17,7 +17,7 @@ namespace Accounting
         public int Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public int UserRoleId { get; set; }
+        public Nullable<int> UserRoleId { get; set; }
     
         public virtual Role Role { get; set; }
     }

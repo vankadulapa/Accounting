@@ -46,7 +46,7 @@ namespace Accounting
                 MessageBox.Show(errors.ToString());
                 return;
             }
-            if (_curentTypeMaintenance.IdTypeMaintenance == null)
+            if (_curentTypeMaintenance.IdTypeMaintenance == 0)
                 AccountingEntities.GetContext().TypeMaintenances.Add(_curentTypeMaintenance);
             try
             {

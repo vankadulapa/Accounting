@@ -37,8 +37,8 @@ namespace Accounting
         {
             StringBuilder errors = new StringBuilder();
 
-            //if (_currentMaintenance.IdTypeMaintenance == null)
-            //    errors.AppendLine("Выберите тип обслуживания");
+            if (_currentMaintenance.IdTypeMaintenance == null)
+                errors.AppendLine("Выберите тип обслуживания");
             if (_currentMaintenance.IdEquipment == null)
                 errors.AppendLine("Выберите оборудование");
 
