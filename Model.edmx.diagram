@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ae6adf4f9fa44b22b7a74abfe4e2a0ed" Name="Diagram1">
-        <EntityTypeShape EntityType="AccountingModel.Department" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.Employee" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.Equipment" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.JobTitle" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.Maintenance" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.Role" Width="1.5" PointX="2.75" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.sysdiagram" Width="1.5" PointX="7.75" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.TypeMaintenance" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.User" Width="1.5" PointX="5" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="AccountingModel.Отчет" Width="1.5" PointX="8.75" PointY="2.375" IsExpanded="true" />
+      <Diagram DiagramId="3b241dc584fd438bbb67e8e38f92a86f" Name="Diagram1">
+        <EntityTypeShape EntityType="AccountingModel.Department" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Employee" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Equipment" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.JobTitle" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Maintenance" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Role" Width="1.5" PointX="2.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.TypeMaintenance" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.User" Width="1.5" PointX="5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingModel.Отчет" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="AccountingModel.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingModel.FK_Equipment_Department" ManuallyRouted="false" />
         <AssociationConnector Association="AccountingModel.FK_Employee_Equipment" ManuallyRouted="false" />
         <AssociationConnector Association="AccountingModel.FK_Employee_JobTitle" ManuallyRouted="false" />
         <AssociationConnector Association="AccountingModel.FK_Maintenance_Equipment" ManuallyRouted="false" />

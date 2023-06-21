@@ -18,6 +18,7 @@ namespace Accounting
         public Department()
         {
             this.Employees = new HashSet<Employee>();
+            this.Equipments = new HashSet<Equipment>();
         }
     
         public int IdDepartment { get; set; }
@@ -25,5 +26,7 @@ namespace Accounting
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employee> Employees { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Equipment> Equipments { get; set; }
     }
 }

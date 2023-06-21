@@ -12,7 +12,7 @@ namespace Accounting
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class AccountingEntities : DbContext
     {
         private static AccountingEntities _context;
@@ -33,14 +33,13 @@ namespace Accounting
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Equipment> Equipments { get; set; }
         public virtual DbSet<JobTitle> JobTitles { get; set; }
         public virtual DbSet<Maintenance> Maintenances { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TypeMaintenance> TypeMaintenances { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Отчет> Отчет { get; set; }

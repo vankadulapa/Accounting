@@ -13,7 +13,7 @@
         <DataGrid x:Name="DGridEqupment" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Оборудование" Binding="{Binding NameEquipment}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Отдел" Binding="{Binding IdDepartment}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отдел" Binding="{Binding Department.NameDepartment}" Width="*"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

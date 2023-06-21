@@ -15,7 +15,7 @@
         <DataGrid x:Name="DGridMaintance" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Оборудование" Binding="{Binding Equipment.NameEquipment}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Тип Обслуживания" Binding="{Binding TypeMaintenance}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Тип Обслуживания" Binding="{Binding TypeMaintenance.NameMaintenance}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Дата обслуживания" Binding="{Binding DateMaintenance}" Width="*"></DataGridTextColumn>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>

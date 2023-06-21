@@ -16,10 +16,10 @@ namespace Accounting
     {
         public int IdMaintenance { get; set; }
         public Nullable<int> IdEquipment { get; set; }
-        public Nullable<int> TypeMaintenance { get; set; }
+        public Nullable<int> IdTypeMaintenance { get; set; }
         public Nullable<System.DateTime> DateMaintenance { get; set; }
     
         public virtual Equipment Equipment { get; set; }
-        public virtual TypeMaintenance TypeMaintenance1 { get; set; }
+        public virtual TypeMaintenance TypeMaintenance { get; set; }
     }
 }

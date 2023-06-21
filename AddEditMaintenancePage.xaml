@@ -14,9 +14,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="81,81,0,0" TextWrapping="Wrap" Text="Оборудование" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,121,0,0" TextWrapping="Wrap" Text="Тип обслуживания" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,161,0,0" TextWrapping="Wrap" Text="Дата обслуживания" VerticalAlignment="Top"/>
-        <ComboBox ItemsSource="{Binding NameMaintenance}" SelectedValue="{Binding TypeMaintenance, Mode=TwoWay}" SelectedValuePath="TypeMaintenance" x:Name="ComboEquipment" DisplayMemberPath="Equipment" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox ItemsSource="{Binding IdEquipment}" SelectedValue="{Binding IdEquipment, Mode=TwoWay}" SelectedValuePath="IdEquipment" DisplayMemberPath="NameEquipment"  x:Name="ComboTypeOfMeintenance" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding TypeMaintenance}" SelectedValue="{Binding IdMaintenance, Mode=TwoWay}" SelectedValuePath="IdTypeMaintenance" x:Name="ComboTypeMaintenance" DisplayMemberPath="NameMaintenance" HorizontalAlignment="Center" Margin="0,115,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox ItemsSource="{Binding Equipment}" SelectedValue="{Binding IdEquipment, Mode=TwoWay}" SelectedValuePath="IdEquipment" DisplayMemberPath="NameEquipment"  x:Name="ComboEquipment" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Text="{Binding DateMaintenance}" HorizontalAlignment="Center" Margin="0,161,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

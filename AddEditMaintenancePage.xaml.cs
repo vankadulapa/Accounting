@@ -29,16 +29,16 @@ namespace Accounting
                 _currentMaintenance = selectedMaintenance;
 
             DataContext = _currentMaintenance;
+            ComboTypeMaintenance.ItemsSource = AccountingEntities.GetContext().TypeMaintenances.ToList();
             ComboEquipment.ItemsSource = AccountingEntities.GetContext().Equipments.ToList();
-            ComboTypeOfMeintenance.ItemsSource = AccountingEntities.GetContext().TypeMaintenances.ToList();
         }
 
         private void Btn_Save_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder errors = new StringBuilder();
 
-            if (_currentMaintenance.TypeMaintenance == null)
-                errors.AppendLine("Выберите тип обслуживания");
+            //if (_currentMaintenance.IdTypeMaintenance == null)
+            //    errors.AppendLine("Выберите тип обслуживания");
             if (_currentMaintenance.IdEquipment == null)
                 errors.AppendLine("Выберите оборудование");
 
